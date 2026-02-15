@@ -7,12 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PokemonViewController: UIViewController {
 
-    @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var statLabel: UILabel!
-    @IBOutlet weak var pokemonImage: UIImageView!
+    
     
     // Defined Manager
     var manager = PokemonManager()
@@ -20,30 +17,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // "Manager, I am your delegate (dealer)!" we say.
         manager.delegate = self
-    }
-
-    @IBAction func searchPressed(_ sender: UIButton) {
-        // 1. Check if the user has typed anything
-        if let searchText = searchTextField.text {
-            
-            // 2. Let's print what was written to the console (for testing)
-            print("Searched word: \(searchText)")
-            
-            // 3. Give the order to the manager!
-            manager.fetchPokemon(pokemonName: searchText)
-        }
         
-        // Turn off the keyboard
-        searchTextField.endEditing(true)
     }
     
 }
 
 // MARK: - PokemonManagerDelegate
 
-extension ViewController: PokemonManagerDelegate {
+extension PokemonViewController: PokemonManagerDelegate {
     func didUpdatePokemon(pokemon: PokemonData) {
         
         // THIS IS VERY CRITICAL!
