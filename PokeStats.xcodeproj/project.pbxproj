@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		B228A64B2F33A4E200EE668A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B25E7C622F3399E000379AEF /* PokeStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B22747572F422A4E007E340D /* Exceptions for "PokeStats" folder in "PokeStats" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B25E7C612F3399E000379AEF /* PokeStats */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B228A6622F33BB4E00EE668A /* Model */ = {
@@ -29,6 +38,9 @@
 		};
 		B25E7C642F3399E000379AEF /* PokeStats */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B22747572F422A4E007E340D /* Exceptions for "PokeStats" folder in "PokeStats" target */,
+			);
 			path = PokeStats;
 			sourceTree = "<group>";
 		};
@@ -49,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				B25E7C642F3399E000379AEF /* PokeStats */,
-				B228A64B2F33A4E200EE668A /* Info.plist */,
 				B228A6622F33BB4E00EE668A /* Model */,
 				B228A66D2F33BB6600EE668A /* View */,
 				B228A6662F33BB6000EE668A /* Controller */,
@@ -155,6 +166,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W8NUH4ZAU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokeStats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -186,6 +198,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W8NUH4ZAU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokeStats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
